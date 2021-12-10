@@ -25,4 +25,8 @@ npm install
 ng serve
 ```
 
+## Quality of the Code
+
+[![DeepScan grade](https://deepscan.io/api/teams/11362/projects/19450/branches/505487/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=11362&pid=19450&bid=505487)
+
 Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

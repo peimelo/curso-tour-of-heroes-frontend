@@ -9,7 +9,7 @@
   <mat-card
     class="pointer"
     *ngFor="let hero of heroes"
-    routerLink="/heroes/{{ hero.id }}"
+    [routerLink]="['/heroes', hero.id]"
   >
     <mat-card-title>{{ hero.name }}</mat-card-title>
   </mat-card>

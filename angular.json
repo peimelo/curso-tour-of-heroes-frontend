@@ -76,7 +76,8 @@
               "browserTarget": "curso-tour-of-heroes-frontend:build:production"
             },
             "development": {
-              "browserTarget": "curso-tour-of-heroes-frontend:build:development"
+              "browserTarget": "curso-tour-of-heroes-frontend:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"

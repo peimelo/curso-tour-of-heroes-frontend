@@ -37,10 +37,13 @@ export class HeroesComponent implements OnInit {
     });
 
     dialogRef.afterClosed().subscribe((result) => {
-      console.log(result);
       if (result) {
         this.heroService.delete(hero).subscribe(() => this.getHeroes());
       }
     });
+  }
+
+  onSelected(hero: Hero): void {
+    this.delete(hero);
   }
 }

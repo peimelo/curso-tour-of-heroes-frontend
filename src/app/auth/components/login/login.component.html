@@ -1,0 +1,51 @@
+<mat-card>
+  <mat-card-title>Login</mat-card-title>
+
+  <mat-card-content>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <p>
+        <mat-form-field>
+          <input
+            formControlName="email"
+            matInput
+            placeholder="Email"
+            required
+            type="email"
+          />
+        </mat-form-field>
+      </p>
+
+      <p>
+        <mat-form-field>
+          <input
+            formControlName="password"
+            matInput
+            placeholder="Password"
+            required
+            type="password"
+          />
+
+          <mat-hint>
+            CAUTION: Do not reuse any of your existing password.
+          </mat-hint>
+
+          <mat-error *ngIf="form.controls['password'].hasError('required')">
+            Password is required.
+          </mat-error>
+
+          <mat-error *ngIf="form.controls['password'].hasError('minlength')">
+            Password should contain at least 10 characters.
+          </mat-error>
+        </mat-form-field>
+      </p>
+
+      <p>
+        <button color="primary" mat-raised-button type="submit">Login</button>
+      </p>
+
+      <p>
+        <a mat-button>Forgot password?</a>
+      </p>
+    </form>
+  </mat-card-content>
+</mat-card>

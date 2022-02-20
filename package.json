@@ -8,7 +8,10 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "backend": "json-server --watch ./src/mocks/db.json --routes ./src/mocks/routes.json --delay 500"
+    "backend": "json-server --watch ./src/mocks/db.json --routes ./src/mocks/routes.json --delay 500",
+    "compodoc:build": "compodoc -p tsconfig.doc.json",
+    "compodoc:build-and-serve": "compodoc -p tsconfig.doc.json -s",
+    "compodoc:serve": "compodoc -s"
   },
   "private": true,
   "dependencies": {
@@ -36,6 +39,7 @@
     "@angular-eslint/template-parser": "13.0.1",
     "@angular/cli": "~13.0.4",
     "@angular/compiler-cli": "~13.0.0",
+    "@compodoc/compodoc": "^1.1.18",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
     "@typescript-eslint/eslint-plugin": "5.3.0",

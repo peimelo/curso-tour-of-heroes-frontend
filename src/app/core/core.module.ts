@@ -3,6 +3,7 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { RouterModule } from '@angular/router';
+import { IconsModule } from '../icons/icons.module';
 import { MaterialModule } from '../material/material.module';
 import { ConfirmationDialogComponent } from './components/confirmation-dialog/confirmation-dialog.component';
 import { LoadingComponent } from './components/loading/loading.component';
@@ -20,7 +21,7 @@ const CORE_COMPONENTS = [
   PageNotFoundComponent,
   ToolbarComponent,
 ];
-const MODULES = [FlexLayoutModule, MaterialModule, RouterModule];
+const MODULES = [FlexLayoutModule, IconsModule, MaterialModule, RouterModule];
 
 @NgModule({
   declarations: [CORE_COMPONENTS],

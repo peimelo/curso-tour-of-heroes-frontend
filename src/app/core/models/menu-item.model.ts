@@ -1,5 +1,6 @@
 export interface MenuItem {
-  icon: string;
+  fasIcon?: any;
+  matIcon?: string;
   routerLink: string;
   toolTipText: string;
 }

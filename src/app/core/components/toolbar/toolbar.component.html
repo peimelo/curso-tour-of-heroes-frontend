@@ -11,7 +11,12 @@
       *ngFor="let menuItem of menuItems"
       [routerLink]="[menuItem.routerLink]"
     >
-      <mat-icon>{{ menuItem.icon }}</mat-icon>
+      <fa-icon
+        [icon]="['fas', menuItem.fasIcon]"
+        *ngIf="!!menuItem.fasIcon"
+      ></fa-icon>
+
+      <mat-icon *ngIf="!!menuItem.matIcon">{{ menuItem.matIcon }}</mat-icon>
     </button>
   </ng-container>
 

@@ -11,7 +11,9 @@
     "backend": "json-server --watch ./src/mocks/db.json --routes ./src/mocks/routes.json --delay 500",
     "compodoc:build": "compodoc -p tsconfig.doc.json",
     "compodoc:build-and-serve": "compodoc -p tsconfig.doc.json -s",
-    "compodoc:serve": "compodoc -s"
+    "compodoc:serve": "compodoc -s",
+    "build:stats": "ng build --configuration development --stats-json",
+    "analyze": "webpack-bundle-analyzer dist/curso-tour-of-heroes-frontend/stats.json"
   },
   "private": true,
   "dependencies": {
@@ -55,6 +57,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
-    "typescript": "~4.4.3"
+    "typescript": "~4.4.3",
+    "webpack-bundle-analyzer": "^4.5.0"
   }
 }

@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  baseUrl: 'https://curso-tour-of-heroes-api.fly.dev/api',
+  baseUrl: 'https://toh-api.vercel.app/api',
 };
